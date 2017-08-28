@@ -120,7 +120,7 @@ class ApplicationController < ActionController::Base
     gon.markets = Market.to_hash
 
     gon.pusher = {
-      key:       ENV['PUSHER_KEY'],
+      key:       "90f8c4e8f9abfe5b5638",
       wsHost:    ENV['PUSHER_HOST']      || 'ws.pusherapp.com',
       wsPort:    ENV['PUSHER_WS_PORT']   || '80',
       wssPort:   ENV['PUSHER_WSS_PORT']  || '443',
