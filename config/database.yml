@@ -1,0 +1,16 @@
+development: &defaults
+  adapter: mysql2
+  encoding: utf8
+  database: peatio_development
+  username: railsuser
+  password: test
+  pool: 10
+  reconnect: false
+
+test:
+  <<: *defaults
+  database: peatio_test
+
+production:
+  <<: *defaults
+  database: peatio_production
